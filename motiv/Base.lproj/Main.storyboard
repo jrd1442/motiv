@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5cX-iR-EBY">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Page Image Controller-->
+        <scene sceneID="FKR-a5-5F7">
+            <objects>
+                <pageViewController storyboardIdentifier="PageImageController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="5cX-iR-EBY" customClass="PageImageController" customModule="motiv" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E6y-fV-uoX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="484" y="405"/>
+        </scene>
+        <!--Image Controller-->
+        <scene sceneID="DwX-OL-3HD">
+            <objects>
+                <viewController storyboardIdentifier="ImageController" id="vQq-SR-o1k" customClass="ImageController" customModule="motiv" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hjG-ho-yWn"/>
+                        <viewControllerLayoutGuide type="bottom" id="gju-zD-pxw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vuo-bD-den">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jid-vG-Nax">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jid-vG-Nax" firstAttribute="leading" secondItem="Vuo-bD-den" secondAttribute="leading" id="7sA-1n-nML"/>
+                            <constraint firstItem="jid-vG-Nax" firstAttribute="bottom" secondItem="gju-zD-pxw" secondAttribute="top" id="UUk-h4-Tb8"/>
+                            <constraint firstAttribute="trailing" secondItem="jid-vG-Nax" secondAttribute="trailing" id="Ytk-FM-7Wn"/>
+                            <constraint firstItem="jid-vG-Nax" firstAttribute="top" secondItem="Vuo-bD-den" secondAttribute="top" id="gct-hB-qc0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="jid-vG-Nax" id="zux-B3-nro"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P9H-1K-akX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1188" y="395"/>
+        </scene>
+    </scenes>
+</document>
